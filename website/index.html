@@ -1,21 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>CI/CD Pipeline Demo</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevStream - Video Platform</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#141414;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:black;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:red;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+/* Banner */
+
+.banner{
+    height:400px;
+    background:url("https://images.unsplash.com/photo-1522199710521-72d69614c702") center/cover;
+    display:flex;
+    align-items:center;
+    padding-left:50px;
+}
+
+.banner h1{
+    font-size:48px;
+}
+
+/* Video Section */
+
+.section{
+    padding:30px 40px;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+/* Video Grid */
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.video-card{
+    background:#1f1f1f;
+    border-radius:8px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.video-card:hover{
+    transform:scale(1.05);
+}
+
+.video-card img{
+    width:100%;
+}
+
+.video-info{
+    padding:10px;
+}
+
+.video-title{
+    font-size:16px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    margin-top:30px;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>CI/CD Pipeline Deployment Successful</h1>
+<!-- Navbar -->
 
-<p>
-This website was automatically deployed using a CI/CD pipeline.
-</p>
+<div class="navbar">
 
-<p>
-Project: DevOps CI/CD Pipeline Demo
-</p>
+<div class="logo">DevStream</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Trending</a>
+<a href="#">New</a>
+<a href="#">My List</a>
+</div>
+
+</div>
+
+
+<!-- Banner -->
+
+<div class="banner">
+<h1>Featured DevOps Videos</h1>
+</div>
+
+
+<!-- Trending Section -->
+
+<div class="section">
+
+<h2>🔥 Trending</h2>
+
+<div class="video-grid">
+
+<div class="video-card">
+<img src="https://img.youtube.com/vi/9sg-A-eS6Ig/0.jpg">
+<div class="video-info">
+<div class="video-title">Jenkins CI/CD Pipeline</div>
+</div>
+</div>
+
+<div class="video-card">
+<img src="https://img.youtube.com/vi/0yWAtQ6wYNM/0.jpg">
+<div class="video-info">
+<div class="video-title">Docker Tutorial</div>
+</div>
+</div>
+
+<div class="video-card">
+<img src="https://img.youtube.com/vi/X48VuDVv0do/0.jpg">
+<div class="video-info">
+<div class="video-title">Kubernetes Basics</div>
+</div>
+</div>
+
+<div class="video-card">
+<img src="https://img.youtube.com/vi/kTp5xUtcalw/0.jpg">
+<div class="video-info">
+<div class="video-title">Terraform Explained</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- DevOps Learning Section -->
+
+<div class="section">
+
+<h2>📚 DevOps Learning</h2>
+
+<div class="video-grid">
+
+<div class="video-card">
+<img src="https://img.youtube.com/vi/3m1p3QjH7sM/0.jpg">
+<div class="video-info">
+<div class="video-title">AWS Basics</div>
+</div>
+</div>
+
+<div class="video-card">
+<img src="https://img.youtube.com/vi/8Xo3vM1e2oI/0.jpg">
+<div class="video-info">
+<div class="video-title">Linux Commands</div>
+</div>
+</div>
+
+<div class="video-card">
+<img src="https://img.youtube.com/vi/2LaAJq1lB1Q/0.jpg">
+<div class="video-info">
+<div class="video-title">Git & GitHub</div>
+</div>
+</div>
+
+<div class="video-card">
+<img src="https://img.youtube.com/vi/7Q17ubqLfaM/0.jpg">
+<div class="video-info">
+<div class="video-title">CI/CD Explained</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+© 2026 DevStream | CI/CD Demo Project
+</footer>
 
 </body>
 </html>
