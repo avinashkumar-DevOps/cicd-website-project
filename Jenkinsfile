@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/avinashkumar-DevOps/cicd-website-project.git'
+                git branch: 'main', url: 'https://github.com/avinashkumar-DevOps/cicd-website-project.git'
             }
         }
 
